@@ -13,6 +13,8 @@
 		9F358BD727E486F6002EC375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F358BD527E486F6002EC375 /* Main.storyboard */; };
 		9F358BD927E486FE002EC375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F358BD827E486FE002EC375 /* Assets.xcassets */; };
 		9F358BDC27E486FE002EC375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F358BDA27E486FE002EC375 /* LaunchScreen.storyboard */; };
+		9F358BE527E49698002EC375 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F358BE427E49698002EC375 /* SearchResponse.swift */; };
+		9F358BE827E4AB67002EC375 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F358BE727E4AB67002EC375 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9F358BD827E486FE002EC375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F358BDB27E486FE002EC375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F358BDD27E486FE002EC375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F358BE427E49698002EC375 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		9F358BE727E4AB67002EC375 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,30 @@
 				9F358BCF27E486F6002EC375 /* AppDelegate.swift */,
 				9F358BD127E486F6002EC375 /* SceneDelegate.swift */,
 				9F358BD327E486F6002EC375 /* ViewController.swift */,
+				9F358BEB27E4B595002EC375 /* Networking */,
+				9F358BEA27E4B58B002EC375 /* Models */,
 				9F358BD527E486F6002EC375 /* Main.storyboard */,
 				9F358BD827E486FE002EC375 /* Assets.xcassets */,
 				9F358BDA27E486FE002EC375 /* LaunchScreen.storyboard */,
 				9F358BDD27E486FE002EC375 /* Info.plist */,
 			);
 			path = iTunesPlaylist;
+			sourceTree = "<group>";
+		};
+		9F358BEA27E4B58B002EC375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F358BE427E49698002EC375 /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F358BEB27E4B595002EC375 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9F358BE727E4AB67002EC375 /* NetworkService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F358BE827E4AB67002EC375 /* NetworkService.swift in Sources */,
+				9F358BE527E49698002EC375 /* SearchResponse.swift in Sources */,
 				9F358BD427E486F6002EC375 /* ViewController.swift in Sources */,
 				9F358BD027E486F6002EC375 /* AppDelegate.swift in Sources */,
 				9F358BD227E486F6002EC375 /* SceneDelegate.swift in Sources */,
